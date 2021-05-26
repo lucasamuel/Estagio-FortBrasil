@@ -1,2 +1,5 @@
+<div align="center">
 # Estagio-FortBrasil
-Projeto desenvolvido para processo seletivo da Fort Brasil
+</div>
+
+Projeto desenvolvido para processo seletivo da Fort Brasil.
