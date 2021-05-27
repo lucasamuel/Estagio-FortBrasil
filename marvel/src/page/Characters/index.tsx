@@ -42,7 +42,7 @@ const handleMore = useCallback(async () => {
             },
         });
 
-        setCharacters([... characters, ...response.data.data.results])
+        setCharacters([...characters, ...response.data.data.results])
 
     } catch (err) {
         console.log(err);
@@ -83,3 +83,4 @@ const handleMore = useCallback(async () => {
 }
 
 export default Characters;
+
