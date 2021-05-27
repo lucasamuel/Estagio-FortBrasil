@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Characters from './page/Characters';
 import GlobalStyle from './styles/global';
 
