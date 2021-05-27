@@ -1,9 +1,11 @@
 //Arquivo com a página que lista os Personagens.
 
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import api from '../../services/api'
 
-import { Container } from './styles';
+import background from '../../img/background-1.gif';
+
+import { Container, Card, CardList, Background, MoreButton } from './styles';
 
 interface ResponseData {
     id: string;
@@ -14,6 +16,7 @@ interface ResponseData {
         extension: string;
     };
 }
+
 
 const Characters: React.FC = () => {
 
@@ -27,21 +30,48 @@ const Characters: React.FC = () => {
         .catch(erro => console.log(erro))
     }, []);
 
-    return (<Container>
-            <h1>Characters</h1>
-            <ul>
+const handleMore = useCallback(async () => {
+    try {
+        const offset = characters.length;
+        const response = await api.get('characters', {
+            params: {
+                offset,
+            },
+        });
+
+        setCharacters([... characters, ...response.data.data.results])
+
+    } catch (err) {
+        console.log(err);
+    }
+},[characters]);
+
+    return (
+        <Container>
+            <Background>
+            <img src={background} alt="" />
+            <h1>Marvel</h1>
+            <h5>Assemble</h5>
+            <h6>A plataforma para você descobrir um pouco mais sobre seus heróis favoritos!</h6>
+            </Background>
+            <h3>Heróis da Marvel</h3>
+            <CardList>
                 {characters.map(character => {
                     return (
-                        <li>
-                            <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`} 
-                            alt={`Imagem do Personagem${character.name}`}
-                            />
-                            <span className="name">{character.name}</span>
-                            <span className="description">{character.description}</span>
-                        </li>
-                    )
-                })}
-            </ul>
+                        <Card key={character.id} thumbnail={character.thumbnail}>
+                        <div id="img" />
+                        <h2>{character.name}</h2>
+                        <p>{character.description}</p>
+                        </Card>
+                        )
+                    })}
+            </CardList>
+                    
+            <MoreButton onClick={handleMore}>
+                <h5>Mostrar mais</h5>
+            </MoreButton>
+            
+
            </Container>)
 }
 

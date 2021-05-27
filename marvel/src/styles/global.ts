@@ -8,7 +8,7 @@ export default createGlobalStyle `
         box-sizing: border-box;
         outline: 0;
 
-        font-family: 'Comic Neue', cursive;
+        font-family: 'Marvel', sans-serif;
     }
 
 `;
