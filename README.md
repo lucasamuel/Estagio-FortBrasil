@@ -1,5 +1,8 @@
 <div align="center">
+
+![alt text](https://github.com/lucasamuel/Estagio-FortBrasil/blob/main/marvel/src/img/fortbrasil-logo.png?raw=true)
   
+
 # Estágio de Desenvolvimento FortBrasil
   
 </div>
@@ -8,62 +11,64 @@ Projeto desenvolvido para Seleção - Estagiário de Desenvolvimento Fort Brasil
 
 ## Desafio Proposto
 
-Desenvolver uma SPA (Single Page Aplication) que mostra a listagem de personagens da Marvel, consumindo a seguinte API: link API.
+Desenvolver uma SPA (Single Page Aplication) que mostra a listagem de personagens da Marvel, consumindo a seguinte API: <a href="https://developer.marvel.com/.">Marvel Developer</a>.
 
 ## Link de acesso à página
 
 
-## Getting Started with Create React App
+## Iniciando a aplicação com create-react-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Requisitos mínimos
+Para prosseguir a criação da aplicação, serão necessários estes componentes instalados na máquina:
 
-#### Available Scripts
+Yarn
+Node JS
 
-In the project directory, you can run:
+* Instalando o Create React App
+Vamos instalar normalmente o create-react-app, que é um bundler de um aplicativo react com funcionalidades integradas como jest (testes automatizados), webpack (bundler javascript), babel (compilador/conversor JS) e muito mais.
 
-### `yarn start`
+* Para instala-lo globalmente, utilizamos o comando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  yarn global add create-react-app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Criando o aplicativo react em typescript:
 
-### `yarn test`
+  Utilize o comando abaixo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  yarn create react-app marvel --template typescript
 
-### `yarn build`
+* Após criado o react-app, execute os seguintes comandos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+  cd marvel
+  
+  npm start
 
 ## Tecnologias/Ferramentas utilizadas
 
+* Typescript
+* Reac Js
+* Node Js
+* JavaScript
+* Styled Components
+* Git e GitHub
+* Visual Studio Code
+* HTML5
 
 ## Layout
+* Tela 1
 
+ ![alt text](https://github.com/lucasamuel/Estagio-FortBrasil/blob/main/marvel/src/img/Tela-1.PNG?raw=true)
+ 
+* Tela 2
 
-## Agradecimento
+ ![alt text](https://github.com/lucasamuel/Estagio-FortBrasil/blob/main/marvel/src/img/Tela-2.PNG?raw=true)
+ 
+* Tela 3
+
+ ![alt text](https://github.com/lucasamuel/Estagio-FortBrasil/blob/main/marvel/src/img/Tela-3.png?raw=true)
+ 
+* Tela 4
+
+ ![alt text](https://github.com/lucasamuel/Estagio-FortBrasil/blob/main/marvel/src/img/Tela-4.png?raw=true)
+ 
+
