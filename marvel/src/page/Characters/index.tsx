@@ -1,5 +1,6 @@
-//Arquivo com a página que lista os Personagens.
+//Código da página que lista os Personagens.
 
+//Importando os componentes que serão utilizados
 import React, { useCallback, useEffect, useState } from 'react';
 import api from '../../services/api'
 
@@ -7,6 +8,7 @@ import background from '../../img/background-1.gif';
 
 import { Container, Card, CardList, Background, MoreButton } from './styles';
 
+//
 interface ResponseData {
     id: string;
     name: string;
@@ -17,6 +19,7 @@ interface ResponseData {
     };
 }
 
+//Componente Personagens e Configuração de GET os atributos da API
 
 const Characters: React.FC = () => {
 
@@ -46,6 +49,7 @@ const handleMore = useCallback(async () => {
     }
 },[characters]);
 
+// Inserção dos conteúdos da Página
     return (
         <Container>
             <Background>
@@ -55,6 +59,9 @@ const handleMore = useCallback(async () => {
             <h6>A plataforma para você descobrir um pouco mais sobre seus heróis favoritos!</h6>
             </Background>
             <h3>Heróis da Marvel</h3>
+
+{/* Busca dos atributos dos Personagens/Character. */}
+
             <CardList>
                 {characters.map(character => {
                     return (

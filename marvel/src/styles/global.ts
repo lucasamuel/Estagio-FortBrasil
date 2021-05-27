@@ -1,3 +1,5 @@
+//Definição dos Estilos Globais
+
 import { createGlobalStyle } from 'styled-components';
 
 

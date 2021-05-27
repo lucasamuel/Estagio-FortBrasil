@@ -1,3 +1,5 @@
+//Estilização dos componentes.
+
 import styled from 'styled-components';
 import background from '../../img/background-1.gif';
 
