@@ -15,6 +15,7 @@ Desenvolver uma SPA (Single Page Aplication) que mostra a listagem de personagen
 
 ## Link de acesso à página
 
+https://estagio-fort-brasil.vercel.app/
 
 ## Iniciando a aplicação com create-react-app
 
@@ -46,7 +47,7 @@ Vamos instalar normalmente o create-react-app, que é um bundler de um aplicativ
 ## Tecnologias/Ferramentas utilizadas
 
 * Typescript
-* Reac Js
+* React Js
 * Node Js
 * JavaScript
 * Styled Components
